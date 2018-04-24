@@ -42,13 +42,15 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
 
                 timePickerDialog.setTitle("Timer Picker");  //Siempre se visualizar en mayúsculas
 
-                timePickerDialog.setThemeDark(true);
+                timePickerDialog.setThemeDark(false);
 
                 timePickerDialog.dismissOnPause(true);  // false -> al minimizar ventana y regresar el datepicker sigue abierto, true-> cierra el datepicker cuando cambia de ventana
 
                 timePickerDialog.setOkText("SET");
 
                 timePickerDialog.setCancelText("DON'T SET");
+
+                timePickerDialog.enableSeconds(true);
 
                 timePickerDialog.show(getFragmentManager(),"timePicker");
 
