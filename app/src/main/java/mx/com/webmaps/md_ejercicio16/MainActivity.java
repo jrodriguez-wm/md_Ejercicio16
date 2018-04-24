@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
                 int currentSec = calendar.get(Calendar.SECOND);
 
                 timePickerDialog = TimePickerDialog.newInstance(MainActivity.this,currentHour,currentMin,currentSec,time24HourMode);
+
+                timePickerDialog.setAccentColor(getResources().getColor(R.color.colorPrimary));
+
                 timePickerDialog.show(getFragmentManager(),"timePicker");
 
             }
