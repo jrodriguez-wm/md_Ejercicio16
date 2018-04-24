@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">MD_Ejercicio16</string>
+    <string name="app_name">MD_TimerPickers</string>
+    <string name="the_time_you_picked_will_show_here">The time you picked will show here</string>
+    <string name="pick_time">PICK TIME</string>
 </resources>
