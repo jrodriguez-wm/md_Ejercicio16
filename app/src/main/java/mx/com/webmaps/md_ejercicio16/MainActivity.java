@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
 
                 timePickerDialog.setThemeDark(true);
 
+                timePickerDialog.dismissOnPause(true);  // false -> al minimizar ventana y regresar el datepicker sigue abierto, true-> cierra el datepicker cuando cambia de ventana
+
                 timePickerDialog.show(getFragmentManager(),"timePicker");
 
             }
