@@ -1,5 +1,6 @@
 package mx.com.webmaps.md_ejercicio16;
 
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
@@ -51,6 +52,13 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
                 timePickerDialog.setCancelText("DON'T SET");
 
                 timePickerDialog.enableSeconds(true);
+
+                timePickerDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        System.out.println("Cancel");
+                    }
+                });
 
                 timePickerDialog.show(getFragmentManager(),"timePicker");
 
