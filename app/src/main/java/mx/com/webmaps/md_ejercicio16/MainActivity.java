@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
 
                 timePickerDialog.setTitle("Timer Picker");  //Siempre se visualizar en mayúsculas
 
+                timePickerDialog.setThemeDark(true);
+
                 timePickerDialog.show(getFragmentManager(),"timePicker");
 
             }
